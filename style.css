@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin";
+  font-size: 18px;
+  line-height: 29px;
+  color: #232323;
+  background: #f8f8f8;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1080px;
+  align-content: center;
+}
+.background {
+  background: url(https://psd.hackeryou.com/assignment1-assets/tasty/asset-1.jpg)
+    center;
+  background-size: cover;
+  height: 650px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  padding: 0 10px;
+}
+ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: #232323;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mainText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.mainText p {
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 42px;
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  padding: 50px;
+}
+
+.about h2,
+.cookDetails h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.infoTasty {
+  width: 881px;
+  text-align: center;
+}
+
+.button-cta,
+.button-read {
+  width: 150px;
+  border: none;
+  background-color: #edc800;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 25px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  padding: 50px;
+  background: #232323;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.moreInfo i {
+  color: #f8f8f8;
+}
+
+.recipes,
+.cooking,
+.contact {
+  color: #f8f8f8;
+  font-weight: 600;
+}
+
+.gallery {
+  height: 350px;
+  padding: 100px;
+}
+
+.galleryBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  margin: 50px 0;
+  padding: 0 50px;
+}
+
+.foodOne img,
+.foodTwo img,
+.foodThree img {
+  width: 300px;
+  object-fit: fill;
+}
+
+.cookingTips,
+.popularRecipes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 440px;
+}
+
+.cookingBox,
+.recipesBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eaedf4;
+  height: 100%;
+}
+
+.cookingBox h3,
+.recipesBox h3,
+.cookingBox p,
+.recipesBox p {
+  width: 40%;
+  text-align: center;
+}
+
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+}
+
+.cookingImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meetTheCook {
+  height: 440px;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cookImage {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.cookContainer {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+  justify-content: center;
+  margin: 0;
+}
+
+.cookDetails {
+  width: 70%;
+}
+
+.cookDetails p {
+  padding: 0 50px 25px 0;
+}
+
+footer {
+  background: #232323;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding: 50px;
+}
+
+h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.menuFooter {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+.divFooter {
+  width: 50%;
+}
+
+.sendEmail {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  width: 70%;
+  height: 40px;
+  border: none;
+}
+button {
+  width: 30%;
+  border: none;
+  background-color: #edc800;
+  font-weight: 400;
+}
+
+input::placeholder {
+  font-family: "Cabin";
+  padding-left: 10px;
+}
