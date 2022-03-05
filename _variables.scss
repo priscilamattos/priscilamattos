@@ -66,3 +66,78 @@ $colors: (
   text-align: center;
   padding: 10px 20px;
 }
+$breakpoint-cell: 600px;
+$breakpoint-tablet: 768px;
+
+@mixin mobileStyles {
+  .menu {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about {
+    height: auto;
+    p {
+      width: auto;
+    }
+  }
+  .moreInfo {
+    height: auto;
+    flex-direction: column;
+  }
+  .galleryBox {
+    height: auto;
+    flex-direction: column;
+  }
+  .cookingTips {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .popularRecipes {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .cookingBox,
+  .recipesBox {
+    width: 100%;
+    padding: 10px;
+    h3,
+    p {
+      width: 90%;
+    }
+    a {
+      margin-top: 0;
+    }
+  }
+  .imageContainer {
+    width: 100%;
+  }
+
+  .meetTheCook {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .cookContainer {
+    width: auto;
+    justify-content: center;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  .menuFooter {
+    width: 100%;
+  }
+}

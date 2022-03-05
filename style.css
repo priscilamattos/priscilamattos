@@ -8,7 +8,6 @@ body {
   line-height: 29px;
   color: #232323;
   background: #f8f8f8;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -18,20 +17,28 @@ body {
   height: 650px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 50px;
+.logo {
+  align-items: left;
+  width: 50%;
+  padding-left: 50px;
 }
-.header h3 {
+.logo h3 {
   font-family: "Great Vibes";
   font-weight: normal;
   font-size: 42px;
+  text-align: left;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
 }
 
 .menu {
   display: flex;
+  width: 50%;
   align-items: center;
+  justify-content: flex-end;
 }
 .menu ul {
   margin: 0;
@@ -52,6 +59,7 @@ body {
 
 .mainText {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +106,7 @@ body {
   font-size: 18px;
   text-align: center;
   line-height: 29px;
-  width: 881px;
+  width: 80%;
 }
 
 .moreInfo {
@@ -193,6 +201,7 @@ body {
 
 .meetTheCook {
   height: 440px;
+  padding: 50px;
   background: #f8f8f8;
   display: flex;
   align-items: center;
@@ -294,4 +303,89 @@ footer {
 .divFooter input::placeholder {
   font-family: "Cabin";
   padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about {
+    height: auto;
+  }
+  .about p {
+    width: auto;
+  }
+
+  .moreInfo {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .galleryBox {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .cookingTips {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .popularRecipes {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .cookingBox,
+.recipesBox {
+    width: 100%;
+    padding: 10px;
+  }
+  .cookingBox h3,
+.cookingBox p,
+.recipesBox h3,
+.recipesBox p {
+    width: 90%;
+  }
+  .cookingBox a,
+.recipesBox a {
+    margin-top: 0;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .meetTheCook {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+  .meetTheCook h2 {
+    text-align: center;
+  }
+
+  .cookContainer {
+    width: auto;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .menuFooter {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
