@@ -1,0 +1,68 @@
+$colors: (
+  mainYellow: #fdc800,
+  blackShade: #232323,
+  backgroundColor: #eaedf4,
+  whiteShade: #f8f8f8,
+);
+
+@mixin fontLogo {
+  font-family: "Great Vibes";
+  font-weight: normal;
+  font-size: 55px;
+}
+
+@mixin headingOne {
+  font-family: "Great Vibes";
+  font-weight: normal;
+  font-size: 42px;
+}
+
+@mixin headingTwo {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 32px;
+}
+
+@mixin bodyHeading {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@mixin bodyMenu {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+@mixin bodyText {
+  font-family: "Cabin";
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  line-height: 29px;
+}
+
+@mixin textButton {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+@mixin mainAlignment {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin styleButton {
+  width: 150px;
+  border: none;
+  background-color: #edc800;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 25px;
+  text-align: center;
+  padding: 10px 20px;
+}

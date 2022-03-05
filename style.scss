@@ -1,0 +1,255 @@
+@import "variables";
+
+body {
+  @include mainAlignment;
+  @include bodyText;
+  color: map-get($colors, "blackShade");
+  background: map-get($colors, "whiteShade");
+  max-width: 1200px;
+  margin: auto;
+}
+
+.background {
+  background: url(https://psd.hackeryou.com/assignment1-assets/tasty/asset-1.jpg)
+    center;
+  background-size: cover;
+  height: 650px;
+}
+
+// <!--Header-->
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  h3 {
+    @include headingOne;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  ul {
+    @include mainAlignment;
+    list-style-type: none;
+    display: flex;
+    li {
+      padding: 0 10px;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: map-get($colors, "blackShade");
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+.mainText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  p {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  h1 {
+    @include fontLogo;
+    margin-top: 0;
+  }
+}
+
+// <--About-->
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  padding: 50px;
+  h2 {
+    @include headingOne;
+  }
+  .button-cta {
+    @include styleButton;
+  }
+  p {
+    @include bodyText;
+    width: 881px;
+  }
+}
+
+// <!--Info Section -->
+.moreInfo {
+  display: flex;
+  height: 150px;
+  padding: 50px;
+  background: map-get($colors, "blackShade");
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.recipes,
+.cooking,
+.contact {
+  color: map-get($colors, "whiteShade");
+  font-weight: 600;
+  i {
+    color: map-get($colors, "whiteShade");
+  }
+}
+
+// <!--Gallery Section -->
+.gallery {
+  height: 350px;
+  padding: 100px;
+}
+
+.galleryBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  margin: 50px 0;
+  padding: 0 50px;
+  img {
+    width: 300px;
+    object-fit: fill;
+  }
+}
+
+// <!-- Cooking Tips | Recipes Section -->
+.cookingTips,
+.popularRecipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 440px;
+}
+
+.cookingBox,
+.recipesBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: map-get($colors, "backgroundColor");
+  height: 100%;
+  h3,
+  p {
+    width: 40%;
+    text-align: center;
+  }
+  a {
+    @include styleButton;
+  }
+}
+
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// <!-- Meet the Cook Section -->
+.meetTheCook {
+  height: 440px;
+  background: map-get($colors, "whiteShade");
+  display: flex;
+  align-items: center;
+}
+
+.cookContainer {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+  justify-content: center;
+  margin: 0;
+  img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+  }
+}
+.cookDetails {
+  h2 {
+    @include headingOne;
+    text-align: left;
+    padding-left: 25px;
+  }
+  p {
+    padding: 0 50px 25px 25px;
+    text-align: left;
+  }
+  a {
+    @include styleButton;
+  }
+}
+
+// <!-- Footer -->
+footer {
+  background: map-get($colors, "blackShade");
+  color: map-get($colors, "whiteShade");
+  display: flex;
+  padding: 50px;
+}
+
+.menuFooter {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.divFooter {
+  h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+
+  width: 50%;
+  form {
+    display: flex;
+  }
+  input {
+    width: 70%;
+    height: 40px;
+    border: none;
+  }
+  button {
+    width: 30%;
+    border: none;
+    background-color: #edc800;
+    font-weight: 400;
+  }
+
+  input::placeholder {
+    font-family: "Cabin";
+    padding-left: 10px;
+  }
+}
