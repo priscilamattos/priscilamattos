@@ -59,7 +59,7 @@ body {
 
 .mainText {
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,11 +131,6 @@ body {
   color: #f8f8f8;
 }
 
-.gallery {
-  height: 350px;
-  padding: 100px;
-}
-
 .galleryBox {
   display: flex;
   align-items: center;
@@ -148,6 +143,7 @@ body {
   width: 300px;
   -o-object-fit: fill;
      object-fit: fill;
+  margin-bottom: 10px;
 }
 
 .cookingTips,
@@ -207,7 +203,7 @@ body {
   align-items: center;
 }
 
-.cookContainer {
+.cookFigure {
   width: 30%;
   height: auto;
   -o-object-fit: contain;
@@ -215,14 +211,16 @@ body {
   justify-content: center;
   margin: 0;
 }
-.cookContainer img {
-  width: 300px;
-  height: 300px;
+.cookFigure img {
   margin: auto;
   display: block;
   border-radius: 50%;
+  width: 100%;
 }
 
+.cookDetails {
+  width: 70%;
+}
 .cookDetails h2 {
   font-family: "Great Vibes";
   font-weight: normal;
@@ -305,9 +303,108 @@ footer {
   padding-left: 10px;
 }
 
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  padding-right: 10px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background: #232323;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+#mobileFooter {
+  display: none;
+}
+#mobileFooter .menuFooter {
+  padding: 20px 10px;
+}
+#mobileFooter .menuFooter h5 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#mobileFooter .menuFooter p {
+  text-align: center;
+}
+#mobileFooter .pages h5 {
+  text-align: center;
+}
+#mobileFooter .pages ul {
+  list-style-type: none;
+}
+#mobileFooter .flexMobile ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+}
+#mobileFooter .contactFooter form {
+  display: flex;
+  flex-direction: column;
+}
+#mobileFooter .contactFooter input {
+  height: 40px;
+  border: none;
+}
+#mobileFooter .contactFooter button {
+  border: none;
+  background-color: #edc800;
+  font-weight: 400;
+  height: 40px;
+}
+#mobileFooter .contactFooter input::-moz-placeholder {
+  font-family: "Cabin";
+  padding-left: 10px;
+}
+#mobileFooter .contactFooter input:-ms-input-placeholder {
+  font-family: "Cabin";
+  padding-left: 10px;
+}
+#mobileFooter .contactFooter input::placeholder {
+  font-family: "Cabin";
+  padding-left: 10px;
+}
+
+#desktopFooter {
+  display: flex;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .menu {
     display: none;
+    visibility: hidden;
+  }
+
+  #hamburger-icon {
+    visibility: visible;
   }
 
   header {
@@ -350,7 +447,7 @@ footer {
   .cookingBox,
 .recipesBox {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px;
   }
   .cookingBox h3,
 .cookingBox p,
@@ -382,10 +479,50 @@ footer {
   }
 
   footer {
+    display: flex;
     flex-direction: column-reverse;
   }
 
   .menuFooter {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+  }
+  .menuFooter h5,
+.menuFooter p {
+    text-align: center;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posts {
+    display: none;
+    visibility: hidden;
+  }
+
+  .divFooter {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .divFooter form {
+    flex-direction: column;
+  }
+  .divFooter input,
+.divFooter button {
+    width: 100%;
+    height: 40px;
+    padding: 0;
+  }
+
+  #desktopFooter {
+    display: none;
+  }
+
+  #mobileFooter {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

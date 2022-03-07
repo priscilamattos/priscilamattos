@@ -66,12 +66,14 @@ $colors: (
   text-align: center;
   padding: 10px 20px;
 }
-$breakpoint-cell: 600px;
-$breakpoint-tablet: 768px;
 
 @mixin mobileStyles {
   .menu {
     display: none;
+    visibility: hidden;
+  }
+  #hamburger-icon {
+    visibility: visible;
   }
   header {
     flex-direction: column;
@@ -108,7 +110,7 @@ $breakpoint-tablet: 768px;
   .cookingBox,
   .recipesBox {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px;
     h3,
     p {
       width: 90%;
@@ -135,9 +137,41 @@ $breakpoint-tablet: 768px;
     justify-content: center;
   }
   footer {
+    display: flex;
     flex-direction: column-reverse;
   }
   .menuFooter {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    h5,
+    p {
+      text-align: center;
+    }
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posts {
+    display: none;
+    visibility: hidden;
+  }
+
+  .divFooter {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    form {
+      flex-direction: column;
+    }
+    input,
+    button {
+      width: 100%;
+      height: 40px;
+      padding: 0;
+    }
   }
 }
