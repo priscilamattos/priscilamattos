@@ -130,7 +130,7 @@ $whiteShade: #f8f8f8;
     height: auto;
     flex-direction: column;
   }
-  .cookingTips {
+  .blog {
     height: auto;
     flex-direction: column;
   }
@@ -139,8 +139,7 @@ $whiteShade: #f8f8f8;
     height: auto;
     flex-direction: column-reverse;
   }
-  .cookingBox,
-  .recipesBox {
+  .blogPost {
     width: 100%;
     padding: 10px 10px;
     h3,
@@ -151,7 +150,7 @@ $whiteShade: #f8f8f8;
       margin-top: 0;
     }
   }
-  .imageContainer {
+  .blogImage {
     width: 100%;
   }
 
@@ -159,8 +158,15 @@ $whiteShade: #f8f8f8;
     height: auto;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0;
     h2 {
       text-align: center;
+    }
+    .cookDetails {
+      width: 90%;
+    }
+    .cookFigure {
+      width: 50%;
     }
   }
 
@@ -182,7 +188,7 @@ $whiteShade: #f8f8f8;
     }
   }
 
-  .pages {
+  .footerLinks {
     display: flex;
     flex-direction: column;
   }
@@ -192,7 +198,7 @@ $whiteShade: #f8f8f8;
     visibility: hidden;
   }
 
-  .divFooter {
+  .formFooter {
     width: 100%;
     flex-direction: column;
     text-align: center;

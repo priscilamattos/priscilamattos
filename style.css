@@ -156,16 +156,14 @@ body {
   margin-bottom: 10px;
 }
 
-.cookingTips,
-.popularRecipes {
+.blog {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 440px;
 }
 
-.cookingBox,
-.recipesBox {
+.blogPost {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -174,15 +172,12 @@ body {
   background: #eaedf4;
   height: 100%;
 }
-.cookingBox h3,
-.cookingBox p,
-.recipesBox h3,
-.recipesBox p {
+.blogPost h3,
+.blogPost p {
   width: 40%;
   text-align: center;
 }
-.cookingBox a,
-.recipesBox a {
+.blogPost a {
   width: 150px;
   border: none;
   background-color: #fdc800;
@@ -193,17 +188,16 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
-.cookingBox a:hover,
-.recipesBox a:hover {
+.blogPost a:hover {
   background: #e2b510;
 }
 
-.imageContainer {
+.blogImage {
   width: 50%;
   height: 100%;
   margin: 0;
 }
-.imageContainer img {
+.blogImage img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -244,6 +238,8 @@ body {
 }
 .cookDetails p {
   text-align: left;
+  padding-left: 20px;
+  padding-bottom: 50px;
 }
 .cookDetails a {
   width: 150px;
@@ -282,26 +278,26 @@ footer {
   text-align: left;
 }
 
-.divFooter {
+.formFooter {
   width: 50%;
 }
-.divFooter h5 {
+.formFooter h5 {
   font-size: 18px;
   margin-bottom: 10px;
   text-align: left;
 }
-.divFooter p {
+.formFooter p {
   text-align: left;
 }
-.divFooter form {
+.formFooter form {
   display: flex;
 }
-.divFooter input {
+.formFooter input {
   width: 70%;
   height: 40px;
   border: none;
 }
-.divFooter button {
+.formFooter button {
   width: 150px;
   border: none;
   background-color: #fdc800;
@@ -313,18 +309,18 @@ footer {
   width: 30%;
   margin-top: 0;
 }
-.divFooter button:hover {
+.formFooter button:hover {
   background: #e2b510;
 }
-.divFooter input::-moz-placeholder {
+.formFooter input::-moz-placeholder {
   font-family: "Cabin";
   padding-left: 10px;
 }
-.divFooter input:-ms-input-placeholder {
+.formFooter input:-ms-input-placeholder {
   font-family: "Cabin";
   padding-left: 10px;
 }
-.divFooter input::placeholder {
+.formFooter input::placeholder {
   font-family: "Cabin";
   padding-left: 10px;
 }
@@ -356,11 +352,9 @@ footer {
 .open .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-
 .open .bar2 {
   opacity: 0;
 }
-
 .open .bar3 {
   transform: rotate(45deg) translate(-6px, -8px);
 }
@@ -378,18 +372,16 @@ footer {
 #mobileFooter .menuFooter p {
   text-align: center;
 }
-#mobileFooter .pages h5 {
+#mobileFooter .footerLinks h5 {
   text-align: center;
 }
-#mobileFooter .pages ul {
-  list-style-type: none;
-}
-#mobileFooter .pages a {
+#mobileFooter .footerLinks a {
   text-decoration: none;
   color: #f8f8f8;
   font-weight: bold;
 }
-#mobileFooter .flexMobile ul {
+#mobileFooter .footerLinks ul {
+  list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -500,7 +492,7 @@ footer {
     flex-direction: column;
   }
 
-  .cookingTips {
+  .blog {
     height: auto;
     flex-direction: column;
   }
@@ -510,23 +502,19 @@ footer {
     flex-direction: column-reverse;
   }
 
-  .cookingBox,
-.recipesBox {
+  .blogPost {
     width: 100%;
     padding: 10px 10px;
   }
-  .cookingBox h3,
-.cookingBox p,
-.recipesBox h3,
-.recipesBox p {
+  .blogPost h3,
+.blogPost p {
     width: 90%;
   }
-  .cookingBox a,
-.recipesBox a {
+  .blogPost a {
     margin-top: 0;
   }
 
-  .imageContainer {
+  .blogImage {
     width: 100%;
   }
 
@@ -534,9 +522,16 @@ footer {
     height: auto;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0;
   }
   .meetTheCook h2 {
     text-align: center;
+  }
+  .meetTheCook .cookDetails {
+    width: 90%;
+  }
+  .meetTheCook .cookFigure {
+    width: 50%;
   }
 
   .cookContainer {
@@ -559,7 +554,7 @@ footer {
     text-align: center;
   }
 
-  .pages {
+  .footerLinks {
     display: flex;
     flex-direction: column;
   }
@@ -569,16 +564,16 @@ footer {
     visibility: hidden;
   }
 
-  .divFooter {
+  .formFooter {
     width: 100%;
     flex-direction: column;
     text-align: center;
   }
-  .divFooter form {
+  .formFooter form {
     flex-direction: column;
   }
-  .divFooter input,
-.divFooter button {
+  .formFooter input,
+.formFooter button {
     width: 100%;
     height: 40px;
     padding: 0;
