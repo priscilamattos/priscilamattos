@@ -20,6 +20,11 @@
       <div class="navbar">
         <div class="logo">
           <h3>Tasty</h3>
+          <div id="hamburger-icon" onClick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
         <nav class="menu">
           <ul>
@@ -28,12 +33,22 @@
             <li><a href="#blog">BLOG</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
         </nav>
-        <div id="hamburger-icon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+        
+        <!-- Top Navigation Menu -->
+  <div id="topNavMobile">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#blog">BLOG</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
       </div>
       <div class="mainText">
         <p>WELCOME TO</p>
@@ -204,13 +219,13 @@
             <h5>PAGES</h5>
             <div class="flexMobile">
               <ul>
-                <li><a>HOME</a></li>
+                <li><a href="#home">HOME</a></li>
                 <li>|</li>
-                <li><a>ABOUT</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li>|</li>
-                <li><a>BLOG</a></li>
+                <li><a href="blog">BLOG</a></li>
                 <li>|</li>
-                <li><a>CONTACT</a></li>
+                <li><a href="contact">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -223,5 +238,6 @@
       src="https://kit.fontawesome.com/dbb28dec5b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./Tasty/app.js"></script>
   </body>
 </html>

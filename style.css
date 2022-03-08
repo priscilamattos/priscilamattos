@@ -18,15 +18,19 @@ body {
 }
 
 .logo {
-  align-items: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 50%;
   padding-left: 50px;
+  padding-right: 50px;
 }
 .logo h3 {
   font-family: "Great Vibes";
   font-weight: normal;
   font-size: 42px;
   text-align: left;
+  cursor: pointer;
 }
 
 .navbar {
@@ -55,6 +59,7 @@ body {
   color: #232323;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .mainText {
@@ -93,12 +98,15 @@ body {
 .about .button-cta {
   width: 150px;
   border: none;
-  background-color: #edc800;
+  background-color: #fdc800;
   font-weight: bold;
   font-size: 18px;
   margin-top: 25px;
   text-align: center;
   padding: 10px 20px;
+}
+.about .button-cta:hover {
+  background: #e2b510;
 }
 .about p {
   font-family: "Cabin";
@@ -129,6 +137,7 @@ body {
 .cooking i,
 .contact i {
   color: #f8f8f8;
+  cursor: pointer;
 }
 
 .galleryBox {
@@ -175,12 +184,17 @@ body {
 .recipesBox a {
   width: 150px;
   border: none;
-  background-color: #edc800;
+  background-color: #fdc800;
   font-weight: bold;
   font-size: 18px;
   margin-top: 25px;
   text-align: center;
   padding: 10px 20px;
+  cursor: pointer;
+}
+.cookingBox a:hover,
+.recipesBox a:hover {
+  background: #e2b510;
 }
 
 .imageContainer {
@@ -196,7 +210,6 @@ body {
 }
 
 .meetTheCook {
-  height: 440px;
   padding: 50px;
   background: #f8f8f8;
   display: flex;
@@ -229,18 +242,21 @@ body {
   padding-left: 25px;
 }
 .cookDetails p {
-  padding: 0 50px 25px 25px;
   text-align: left;
 }
 .cookDetails a {
   width: 150px;
   border: none;
-  background-color: #edc800;
+  background-color: #fdc800;
   font-weight: bold;
   font-size: 18px;
   margin-top: 25px;
   text-align: center;
   padding: 10px 20px;
+  cursor: pointer;
+}
+.cookDetails a:hover {
+  background: #e2b510;
 }
 
 footer {
@@ -285,10 +301,19 @@ footer {
   border: none;
 }
 .divFooter button {
-  width: 30%;
+  width: 150px;
   border: none;
-  background-color: #edc800;
-  font-weight: 400;
+  background-color: #fdc800;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 25px;
+  text-align: center;
+  padding: 10px 20px;
+  width: 30%;
+  margin-top: 0;
+}
+.divFooter button:hover {
+  background: #e2b510;
 }
 .divFooter input::-moz-placeholder {
   font-family: "Cabin";
@@ -358,6 +383,11 @@ footer {
 #mobileFooter .pages ul {
   list-style-type: none;
 }
+#mobileFooter .pages a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bold;
+}
 #mobileFooter .flexMobile ul {
   display: flex;
   justify-content: space-evenly;
@@ -375,8 +405,8 @@ footer {
 }
 #mobileFooter .contactFooter button {
   border: none;
-  background-color: #edc800;
-  font-weight: 400;
+  background-color: #fdc800;
+  font-weight: bold;
   height: 40px;
 }
 #mobileFooter .contactFooter input::-moz-placeholder {
@@ -407,6 +437,38 @@ footer {
     visibility: visible;
   }
 
+  #topNavMobile {
+    display: none;
+    background: #fdc800;
+    position: absolute;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 80px;
+  }
+  #topNavMobile ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  #topNavMobile li {
+    padding: 0 10px;
+  }
+  #topNavMobile a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 20px;
+    padding: 14px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+  }
+  #topNavMobile a:hover {
+    background-color: #f8f8f8;
+    color: #232323;
+  }
+
   header {
     flex-direction: column;
     justify-content: flex-start;
@@ -414,7 +476,6 @@ footer {
 
   .logo {
     width: 100%;
-    justify-content: center;
   }
 
   .about {

@@ -3,9 +3,8 @@
 body {
   @include mainAlignment;
   @include bodyText;
-  color: map-get($colors, "blackShade");
-  background: map-get($colors, "whiteShade");
-  // max-width: 1200px;
+  color: $blackShade;
+  background: $whiteShade;
   margin: auto;
 }
 
@@ -18,12 +17,16 @@ body {
 
 // <!--Header-->
 .logo {
-  align-items: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 50%;
   padding-left: 50px;
+  padding-right: 50px;
   h3 {
     @include headingOne;
     text-align: left;
+    cursor: pointer;
   }
 }
 .navbar {
@@ -45,9 +48,10 @@ body {
     a {
       display: inline-block;
       text-decoration: none;
-      color: map-get($colors, "blackShade");
+      color: $blackShade;
       font-size: 20px;
       font-weight: bold;
+      cursor: pointer;
     }
   }
 }
@@ -95,7 +99,7 @@ body {
   display: flex;
   height: 150px;
   padding: 50px;
-  background: map-get($colors, "blackShade");
+  background: $blackShade;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
@@ -104,10 +108,11 @@ body {
 .recipes,
 .cooking,
 .contact {
-  color: map-get($colors, "whiteShade");
+  color: $whiteShade;
   font-weight: 600;
   i {
-    color: map-get($colors, "whiteShade");
+    color: $whiteShade;
+    cursor: pointer;
   }
 }
 
@@ -143,7 +148,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: map-get($colors, "backgroundColor");
+  background: $backgroundColor;
   height: 100%;
   h3,
   p {
@@ -152,6 +157,7 @@ body {
   }
   a {
     @include styleButton;
+    cursor: pointer;
   }
 }
 
@@ -168,9 +174,8 @@ body {
 
 // <!-- Meet the Cook Section -->
 .meetTheCook {
-  height: 440px;
   padding: 50px;
-  background: map-get($colors, "whiteShade");
+  background: $whiteShade;
   display: flex;
   align-items: center;
 }
@@ -198,18 +203,18 @@ body {
     padding-left: 25px;
   }
   p {
-    padding: 0 50px 25px 25px;
     text-align: left;
   }
   a {
     @include styleButton;
+    cursor: pointer;
   }
 }
 
 // <!-- Footer -->
 footer {
-  background: map-get($colors, "blackShade");
-  color: map-get($colors, "whiteShade");
+  background: $blackShade;
+  color: $whiteShade;
   display: flex;
   padding: 50px;
 }
@@ -249,10 +254,9 @@ footer {
     border: none;
   }
   button {
+    @include styleButton;
     width: 30%;
-    border: none;
-    background-color: #edc800;
-    font-weight: 400;
+    margin-top: 0;
   }
 
   input::placeholder {
@@ -281,7 +285,7 @@ footer {
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background: map-get($colors, "blackShade");
+  background: $blackShade;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -320,6 +324,11 @@ footer {
     ul {
       list-style-type: none;
     }
+    a {
+      text-decoration: none;
+      color: $whiteShade;
+      font-weight: bold;
+    }
   }
   .flexMobile {
     ul {
@@ -342,8 +351,8 @@ footer {
     }
     button {
       border: none;
-      background-color: #edc800;
-      font-weight: 400;
+      background-color: $mainYellow;
+      font-weight: bold;
       height: 40px;
     }
 

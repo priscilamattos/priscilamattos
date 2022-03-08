@@ -1,9 +1,8 @@
-$colors: (
-  mainYellow: #fdc800,
-  blackShade: #232323,
-  backgroundColor: #eaedf4,
-  whiteShade: #f8f8f8,
-);
+$mainYellow: #fdc800;
+$hoverButton: #e2b510;
+$blackShade: #232323;
+$backgroundColor: #eaedf4;
+$whiteShade: #f8f8f8;
 
 @mixin fontLogo {
   font-family: "Great Vibes";
@@ -59,12 +58,15 @@ $colors: (
 @mixin styleButton {
   width: 150px;
   border: none;
-  background-color: #edc800;
+  background-color: $mainYellow;
   font-weight: bold;
   font-size: 18px;
   margin-top: 25px;
   text-align: center;
   padding: 10px 20px;
+  &:hover {
+    background: $hoverButton;
+  }
 }
 
 @mixin mobileStyles {
@@ -75,13 +77,43 @@ $colors: (
   #hamburger-icon {
     visibility: visible;
   }
+
+  #topNavMobile {
+    display: none;
+    background: $mainYellow;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    margin-top: 80px;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+    }
+    li {
+      padding: 0 10px;
+    }
+    a {
+      text-decoration: none;
+      color: $whiteShade;
+      font-size: 20px;
+      padding: 14px 16px;
+      font-weight: bold;
+      cursor: pointer;
+      display: block;
+      &:hover {
+        background-color: $whiteShade;
+        color: $blackShade;
+      }
+    }
+  }
+
   header {
     flex-direction: column;
     justify-content: flex-start;
   }
   .logo {
     width: 100%;
-    justify-content: center;
   }
 
   .about {
