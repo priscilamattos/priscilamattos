@@ -5,7 +5,7 @@
 
 Hello 🦄
 
-I’m Priscila, a junior front-end developer and ux designer, who loves to built beuatiful and user-friendly interfaces. 
+I’m Priscila, a Front-End Developer and UX/UI Designer, who loves to built beuatiful and user-friendly interfaces. 
 </br>
 
 ![Priscila's GitHub stats](https://github-readme-stats.vercel.app/api?username=priscilamattos&show_icons=true&theme=omni)
