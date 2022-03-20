@@ -3,7 +3,7 @@
 
 
 
-Hello 🦄
+Hello! 🦄
 
 I’m Priscila, a Front-End Developer and UX/UI Designer, who loves to built beuatiful and user-friendly interfaces. 
 </br>
