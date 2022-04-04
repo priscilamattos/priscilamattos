@@ -22,6 +22,9 @@ I’m Priscila, a Front-End Developer and UX/UI Designer, who loves to built bea
 <a href="https://github.com/priscilamattos/hire-it-canada-recruiting-agency">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=priscilamattos&theme=omni&repo=hire-it-canada-recruiting-agency" />
 </a>
+<a href="https://github.com/priscilamattos/spacex">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=priscilamattos&theme=omni&repo=spacex" />
+</a>
 
 
 ## 💻 Skills
