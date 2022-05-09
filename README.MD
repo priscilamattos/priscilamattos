@@ -16,14 +16,14 @@ I’m Priscila, a Front-End Developer and UX/UI Designer, who loves to built bea
 <a href="https://github.com/priscilamattos/planted-project-1">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=priscilamattos&theme=omni&repo=planted-project-1" />
 </a>
-<a href="https://github.com/priscilamattos/arora_assignment-juno">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=priscilamattos&theme=omni&repo=arora_assignment-juno" />
-</a>
 <a href="https://github.com/priscilamattos/hire-it-canada-recruiting-agency">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=priscilamattos&theme=omni&repo=hire-it-canada-recruiting-agency" />
 </a>
 <a href="https://github.com/priscilamattos/spacex">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=priscilamattos&theme=omni&repo=spacex" />
+</a>
+<a href="https://github.com/priscilamattos/john-mayer-songs">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=priscilamattos&theme=omni&repo=john-mayer-songs" />
 </a>
 
 
